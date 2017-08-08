@@ -12,9 +12,8 @@ import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnLogin;
-    EditText edtUserName, edtPassword;
-    TextView tvForgetPassword, tvSignUp;
+    Button btnLoginFacebook, btnLoginGmail;
+
 
 
     @Override
@@ -24,23 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         AnhXa();
 
-        tvSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SignUp.class);
-                startActivity(intent);
-            }
-        });
-
-        tvForgetPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ForgetPassword.class);
-                startActivity(intent);
-            }
-        });
-
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnLoginFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
@@ -48,15 +31,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnLoginGmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
     void AnhXa(){
-        btnLogin = (Button) findViewById(R.id.btnLogin);
-        edtUserName = (EditText) findViewById(R.id.edtUserName);
-        edtPassword = (EditText) findViewById(R.id.edtPassword);
-        tvForgetPassword = (TextView) findViewById(R.id.tvForgetPassword);
-        tvSignUp = (TextView) findViewById(R.id.tvSignUp);
+        btnLoginFacebook = (Button) findViewById(R.id.btnLoginFacebook);
+        btnLoginGmail = (Button) findViewById(R.id.btnLoginWithGmail);
     }
 
 

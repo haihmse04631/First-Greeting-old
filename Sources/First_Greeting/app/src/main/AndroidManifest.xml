@@ -21,7 +21,9 @@
         <activity
             android:name=".FirstGreetingMain"
             android:label="@string/title_activity_first_greeting_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginWithFacebook" />
+        <activity android:name=".LoginWithGmail"></activity>
     </application>
 
 </manifest>
