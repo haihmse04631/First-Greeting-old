@@ -5,8 +5,8 @@ package com.example.haihm.first_greeting;
  */
 
 public class List_Chat {
-    String name;
-    int avatar;
+    private String name;
+    private int avatar;
 
     public List_Chat(String name, int avatar) {
         this.name = name;

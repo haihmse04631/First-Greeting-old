@@ -9,8 +9,8 @@ import android.widget.ImageButton;
 
 public class ForgetPassword extends AppCompatActivity {
 
-    ImageButton btnBackToMain;
-    Button fogetPassword;
+    private ImageButton btnBackToMain;
+    private Button fogetPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

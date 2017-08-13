@@ -45,6 +45,7 @@ public class FirstGreetingMain extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_greeting_main);
+        overridePendingTransition(R.anim.side_in_right, R.anim.side_out_left);
 
         btnBackToMain = (ImageButton) findViewById(R.id.btnBackToMain);
 
@@ -73,9 +74,10 @@ public class FirstGreetingMain extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+                Intent intent = new Intent(FirstGreetingMain.this, List_Message.class);
+                startActivity(intent);
 
             }
         });

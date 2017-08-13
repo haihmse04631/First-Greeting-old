@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 public class SignUp extends AppCompatActivity {
 
-    ImageButton btnBackToMain;
+    private ImageButton btnBackToMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

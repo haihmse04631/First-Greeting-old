@@ -19,9 +19,9 @@ import java.util.ArrayList;
 
 public class Chat extends Fragment{
 
-    ListView lvListChat;
-    ArrayList<List_Chat> arrayListChat;
-    List_Chat_Adapter adapter;
+    private ListView lvListChat;
+    private ArrayList<List_Chat> arrayListChat;
+    private List_Chat_Adapter adapter;
 
 
     @Override
