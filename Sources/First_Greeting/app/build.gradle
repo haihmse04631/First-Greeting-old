@@ -26,6 +26,12 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    // thư viện của gg service
+    compile 'com.google.android.gms:play-services-auth:9.8.0'
+    // thư viện ảnh picassso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
     compile 'com.android.support:design:25.3.1'
     testCompile 'junit:junit:4.12'
 }
+apply plugin: 'com.google.gms.google-services'
