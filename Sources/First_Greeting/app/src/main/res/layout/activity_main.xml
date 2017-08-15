@@ -33,22 +33,23 @@
         android:layout_weight="3"
         android:layout_width="match_parent"
         android:layout_height="0dp">
+
         <ImageButton
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@null"
-            android:id="@+id/btnLoginWithFacebook"
+            android:id="@+id/btnLoginWithGmail"
             android:layout_width="350dp"
             android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@null"
             app:srcCompat="@drawable/btn_gmail" />
 
         <ImageButton
-            android:layout_marginTop="20dp"
-            android:id="@+id/btnLoginWithGmail"
-            android:background="@null"
-            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnLoginWithFacebook"
             android:layout_width="350dp"
             android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@null"
             app:srcCompat="@drawable/btn_face" />
 
     </LinearLayout>
