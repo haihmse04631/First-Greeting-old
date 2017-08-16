@@ -44,6 +44,10 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+            <state relative-caret-position="120">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+=======
+<<<<<<< HEAD
             <state relative-caret-position="0">
               <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
 =======
@@ -60,6 +64,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
               <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
               <folding />
             </state>
           </provider>
@@ -69,11 +74,19 @@
         </entry>
       </file>
 <<<<<<< HEAD
+      <file leaf-file-name="row_list_chat.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_list_chat.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+=======
+<<<<<<< HEAD
       <file leaf-file-name="activity_list__message.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list__message.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
               <caret line="36" column="4" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="17" />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
               <folding />
             </state>
           </provider>
@@ -82,16 +95,68 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="35" column="70" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+              <folding>
+                <element signature="e#950#1193#0" expanded="true" />
+                <element signature="e#1192#1193#0" expanded="true" />
+              </folding>
+=======
       <file leaf-file-name="Chat.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/Chat.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="FirstGreetingMain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/FirstGreetingMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1226">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsFeed.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/NewsFeed.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Profile.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/Profile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SignUp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/SignUp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="20" column="69" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="69" />
+              <folding>
+                <element signature="e#834#835#0" expanded="true" />
+              </folding>
+=======
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,6 +170,7 @@
               <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
 >>>>>>> 42386ca6d4c43a2cce4bb47858200e6f0affb018
               <folding />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
@@ -125,9 +191,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chat.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/Chat.java">
+      <file leaf-file-name="VideoCall.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/VideoCall.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginWithFacebook.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/LoginWithFacebook.java">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="135">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+=======
 <<<<<<< HEAD
             <state relative-caret-position="238">
               <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
@@ -135,6 +215,7 @@
             <state relative-caret-position="357">
               <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
 >>>>>>> 42386ca6d4c43a2cce4bb47858200e6f0affb018
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
               <folding />
             </state>
           </provider>
@@ -154,7 +235,11 @@
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
       <map>
+<<<<<<< HEAD
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-3.3-all/55gk2rcmfc6p2dg9u9ohc3hw9/gradle-3.3" />
+=======
         <entry key="$PROJECT_DIR$" value="C:\Users\AnhTu\.gradle\wrapper\dists\gradle-3.3-all\55gk2rcmfc6p2dg9u9ohc3hw9\gradle-3.3" />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
       </map>
     </option>
     <option name="myGradleVersions">
@@ -1661,7 +1746,11 @@
     </option>
     <option name="modificationStamps">
       <map>
+<<<<<<< HEAD
+        <entry key="$PROJECT_DIR$" value="4507313865000" />
+=======
         <entry key="D:\First-Greeting\Sources\First_Greeting" value="4508085308238" />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
         <entry key="D:\First_Greating_Github\First-Greeting\Sources\First_Greeting" value="4506619449692" />
       </map>
     </option>
@@ -2027,6 +2116,13 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login_with_facebook.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_first_greeting_main.xml" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/FirstGreetingMain.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/profile_tab.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/List_Chat.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/row_list_chat.xml" />
+=======
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
         <option value="$PROJECT_DIR$/app/src/main/res/layout/chat_tab.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/row_list_chat.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/anim/anim_alpha.xml" />
@@ -2040,18 +2136,27 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/ForgetPassword.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/List_Chat.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/List_Chat_Adapter.java" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/MainActivity.java" />
+=======
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/SignUp.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_list__message.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/List_Message.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/Profile.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/profile_tab.xml" />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+=======
     <option name="x" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1047" />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2079,6 +2184,9 @@
     </navigator>
     <panes>
 <<<<<<< HEAD
+      <pane id="Scope" />
+=======
+<<<<<<< HEAD
       <pane id="Scratches" />
 =======
 <<<<<<< HEAD
@@ -2088,6 +2196,7 @@
 >>>>>>> 42386ca6d4c43a2cce4bb47858200e6f0affb018
       <pane id="PackagesPane" />
 >>>>>>> 25030ec5d7103c611830302609b4239f7e0aafd5
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2211,8 +2320,30 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="First_Greeting" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="first_greeting" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
+      <pane id="PackagesPane" />
+=======
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
       <pane id="ProjectPane" />
 <<<<<<< HEAD
 =======
@@ -2224,10 +2355,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+<<<<<<< HEAD
+    <property name="device.picker.selection" value="HC4AEWW01479" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="true" />
+=======
     <property name="device.picker.selection" value="HC56JWY02158" />
     <property name="last_opened_file_path" value="E:/Developed/Study/TestIntent" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -2564,6 +2701,10 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+=======
+<<<<<<< HEAD
     <frame x="-8" y="0" width="1932" height="1047" extended-state="0" />
 =======
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -2573,6 +2714,7 @@
 >>>>>>> 42386ca6d4c43a2cce4bb47858200e6f0affb018
     <editor active="true" />
 >>>>>>> 25030ec5d7103c611830302609b4239f7e0aafd5
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
@@ -2581,18 +2723,25 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5021322" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47327393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+=======
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30608973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18819599" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962137" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22103004" sideWeight="0.49554566" order="5" side_tool="false" content_ui="combo" />
+=======
 <<<<<<< HEAD
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12686567" sideWeight="0.49554566" order="5" side_tool="false" content_ui="combo" />
 =======
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1923077" sideWeight="0.49554566" order="5" side_tool="false" content_ui="combo" />
 >>>>>>> 25030ec5d7103c611830302609b4239f7e0aafd5
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -2605,6 +2754,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30615166" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2758,6 +2908,9 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/NewsFeed.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/background.jpg" />
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_forget_password.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -2768,8 +2921,11 @@
         <state />
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> 25030ec5d7103c611830302609b4239f7e0aafd5
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/newsfeed_tab.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -2835,6 +2991,9 @@
         <state />
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+=======
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_list_chat.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -2866,6 +3025,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2917,6 +3077,8 @@
         <state />
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -2924,6 +3086,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_first_greeting_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="402">
@@ -2943,6 +3106,9 @@
 >>>>>>> 42386ca6d4c43a2cce4bb47858200e6f0affb018
 >>>>>>> 25030ec5d7103c611830302609b4239f7e0aafd5
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/profile_tab.xml">
+=======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/FirstGreetingMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -2969,6 +3135,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/List_Chat_Adapter.java">
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
@@ -3029,6 +3196,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/List_Chat.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+=======
         <state relative-caret-position="136">
 <<<<<<< HEAD
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
@@ -3053,6 +3224,7 @@
 <<<<<<< HEAD
 =======
 >>>>>>> 42386ca6d4c43a2cce4bb47858200e6f0affb018
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
           <folding />
 >>>>>>> 25030ec5d7103c611830302609b4239f7e0aafd5
         </state>
@@ -3061,6 +3233,38 @@
         <state />
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_list_chat.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/ForgetPassword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/List_Chat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+=======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/Chat.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -3071,21 +3275,52 @@
           <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
 >>>>>>> 42386ca6d4c43a2cce4bb47858200e6f0affb018
           <folding />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
         </state>
       </provider>
     </entry>
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="236">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/LoginWithFacebook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="35" column="70" selection-start-line="35" selection-start-column="70" selection-end-line="35" selection-end-column="70" />
+          <folding>
+            <element signature="e#950#1193#0" expanded="true" />
+            <element signature="e#1192#1193#0" expanded="true" />
+          </folding>
+=======
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
         </state>
       </provider>
       <provider editor-type-id="android-manifest">
         <state />
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/FirstGreetingMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1226">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+=======
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list__message.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -3098,10 +3333,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/NewsFeed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+=======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -3161,11 +3403,35 @@
         <state relative-caret-position="442">
           <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
 >>>>>>> 42386ca6d4c43a2cce4bb47858200e6f0affb018
+>>>>>>> 50f8b45560b775fca9095be19c532af027b79e23
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/Profile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/SignUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="69" selection-start-line="20" selection-start-column="68" selection-end-line="20" selection-end-column="69" />
+          <folding>
+            <element signature="e#834#835#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/haihm/first_greeting/VideoCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
