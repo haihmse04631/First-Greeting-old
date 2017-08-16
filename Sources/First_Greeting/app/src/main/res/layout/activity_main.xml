@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@drawable/background"
-    android:layout_height="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:weightSum="10"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="10">
 
 
     <RelativeLayout
-        android:layout_weight="2.5"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
 
         <ImageView
-            android:background="@null"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@null"
             android:foregroundGravity="center"
             app:srcCompat="@drawable/title" />
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_weight="0.5"
         android:layout_width="match_parent"
-        android:layout_height="0dp"></LinearLayout>
-
+        android:layout_height="0dp"
+        android:layout_weight="0.5"></LinearLayout>
 
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_weight="3"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
 
-        <!--<com.google.android.gms.common.SignInButton-->
-            <!--android:id="@+id/btnLoginWithGmail"-->
-            <!--android:layout_width="350dp"-->
-            <!--android:layout_height="50dp"-->
-            <!--android:layout_gravity="center_horizontal"-->
-            <!--android:layout_marginTop="10dp" />-->
         <ImageButton
             android:id="@+id/btnLoginWithGmail"
             android:layout_width="350dp"
@@ -49,14 +43,23 @@
             android:background="@null"
             app:srcCompat="@drawable/btn_gmail" />
 
-        <ImageButton
-            android:id="@+id/btnLoginWithFacebook"
-            android:layout_width="350dp"
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/btnLoginFacebook"
+            android:layout_width="300dp"
             android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:background="@null"
-            app:srcCompat="@drawable/btn_face" />
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+        <!--<ImageButton-->
+        <!--android:id="@+id/btnLoginWithFacebook"-->
+        <!--android:layout_width="350dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="@null"-->
+        <!--app:srcCompat="@drawable/btn_face" />-->
 
     </LinearLayout>
 
@@ -66,7 +69,6 @@
         android:layout_weight="4">
 
         <TextView
-            android:textColor="#ff0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -74,6 +76,7 @@
             android:fontFamily="cursive"
             android:gravity="center_horizontal"
             android:text="Product by Ice Team"
+            android:textColor="#ff0"
             android:textSize="18sp" />
 
     </RelativeLayout>

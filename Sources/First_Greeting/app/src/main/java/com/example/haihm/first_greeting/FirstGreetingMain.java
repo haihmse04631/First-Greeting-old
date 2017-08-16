@@ -40,12 +40,17 @@ public class FirstGreetingMain extends AppCompatActivity {
      */
     private ViewPager mViewPager;
     private ImageButton btnBackToMain;
+    Intent intent;
+    Bundle bund;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_greeting_main);
         overridePendingTransition(R.anim.side_in_right, R.anim.side_out_left);
+
+        intent = getIntent();
+        bund = intent.getBundleExtra("MyPackage");
 
         btnBackToMain = (ImageButton) findViewById(R.id.btnBackToMain);
 
@@ -81,6 +86,8 @@ public class FirstGreetingMain extends AppCompatActivity {
 
             }
         });
+
+
 
     }
 
@@ -130,7 +137,7 @@ public class FirstGreetingMain extends AppCompatActivity {
                     Chat chatTab = new Chat();
                     return chatTab;
                 case 3:
-                    Profile profileTab = new Profile();
+                    Profile profileTab = new Profile(bund);
                     return profileTab;
                 default:
                     return null;

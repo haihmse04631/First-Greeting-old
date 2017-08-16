@@ -10,10 +10,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInResult;
+import com.facebook.login.LoginManager;
 import com.squareup.picasso.Picasso;
+
+import static com.facebook.FacebookSdk.getApplicationContext;
 
 /**
  * Created by haihm on 8/8/2017.
@@ -21,11 +21,15 @@ import com.squareup.picasso.Picasso;
 
 public class Profile extends Fragment {
 
-     Button btnLogOut;
-     TextView tvUserName;
-     ImageView imgCover, imgAvatar;
+    Button btnLogOut;
+    TextView tvUserName;
+    ImageView imgCover, imgAvatar;
+    Bundle bund;
 
-     int RC_SIGN_IN = 001;
+    public Profile(Bundle bund) {
+        this.bund = bund;
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -36,42 +40,21 @@ public class Profile extends Fragment {
         imgAvatar = (ImageView) rootView.findViewById(R.id.imgAvatar);
         imgCover = (ImageView) rootView.findViewById(R.id.imgCover);
 
+        tvUserName.setText(bund.getString("fbName"));
+        String fbImage = bund.getString("fbImage");
+        Picasso.with(getApplicationContext()).load(fbImage).into(imgAvatar);
+        String fbCover = bund.getString("fbCover");
+        Picasso.with(getApplicationContext()).load(fbCover).into(imgCover);
+
         btnLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                LoginManager.getInstance().logOut();
+                // Edit here to move back the login screen
             }
         });
 
         return rootView;
-    }
-
-    // include basic information
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
-        if (requestCode == RC_SIGN_IN) {
-            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
-            handleSignInResult(result);
-        }
-    }
-
-    // lấy thông tin in ra màn hình
-    private void handleSignInResult(GoogleSignInResult result) {
-
-        if (result.isSuccess()) {
-            // Signed in successfully, show authenticated UI.
-            GoogleSignInAccount acct = result.getSignInAccount();
-//            tvUserName.setText(acct.getEmail().toString());
-            tvUserName.setText(acct.getDisplayName().toString());
-//            Picasso.with(this).load(acct.getPhotoUrl()).into(imgAvatar);
-//            Picasso.w
-
-        } else {
-
-        }
     }
 }
 
