@@ -12,10 +12,13 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.squareup.picasso.Picasso;
 
 import org.w3c.dom.Text;
 
@@ -46,8 +49,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
             @Override
             public void onClick(View v) {
                 signIn();
-//                Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
-//                startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
+                startActivity(intent);
             }
         });
 
@@ -85,7 +88,36 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
         startActivityForResult(signInIntent, RC_SIGN_IN);
         Log.d("Success", mGoogleApiClient.isConnected()+"");
-//        Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
-//        startActivity(intent);
     }
+
+
+    // include basic information
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
+        if (requestCode == RC_SIGN_IN) {
+            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            handleSignInResult(result);
+        }
+    }
+
+    // lấy thông tin in ra màn hình
+    private void handleSignInResult(GoogleSignInResult result) {
+
+        if (result.isSuccess()) {
+            // Signed in successfully, show authenticated UI.
+            GoogleSignInAccount acct = result.getSignInAccount();
+//            tvUserName.setText(acct.getEmail().toString());
+           // tvUserName.setText(acct.getDisplayName().toString());
+            //Picasso.with(this).load(acct.getPhotoUrl()).into(imgAvatar);
+            Intent data = new Intent(MainActivity.this, Profile.class);
+            data.putExtra("Name",acct.getDisplayName().toString());
+            data.putExtra("URLIMAGE",acct.getPhotoUrl());
+        } else {
+
+        }
+    }
+
 }

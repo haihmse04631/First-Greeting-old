@@ -2,7 +2,9 @@ package com.example.haihm.first_greeting;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +14,12 @@ import android.widget.TextView;
 
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
 import com.squareup.picasso.Picasso;
 
 /**
@@ -21,11 +28,13 @@ import com.squareup.picasso.Picasso;
 
 public class Profile extends Fragment {
 
-     Button btnLogOut;
-     TextView tvUserName;
-     ImageView imgCover, imgAvatar;
+    Button btnLogOut;
+    TextView tvUserName;
+    ImageView imgCover, imgAvatar;
 
-     int RC_SIGN_IN = 001;
+    private GoogleApiClient mGoogleApiClient;
+    int RC_SIGN_IN = 001;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -36,42 +45,33 @@ public class Profile extends Fragment {
         imgAvatar = (ImageView) rootView.findViewById(R.id.imgAvatar);
         imgCover = (ImageView) rootView.findViewById(R.id.imgCover);
 
+
+//        String name = getIntent().getStringExtra("Name");
+//        tvUserName.setText(name);
+//        String url = getIntent().getStringExtra("URLIMAGE");
+//        Picasso.with(this).load(url).into(imgAvatar);
+
         btnLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                signOut();
             }
         });
 
         return rootView;
     }
 
-    // include basic information
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
 
-        // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
-        if (requestCode == RC_SIGN_IN) {
-            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
-            handleSignInResult(result);
-        }
-    }
 
-    // lấy thông tin in ra màn hình
-    private void handleSignInResult(GoogleSignInResult result) {
-
-        if (result.isSuccess()) {
-            // Signed in successfully, show authenticated UI.
-            GoogleSignInAccount acct = result.getSignInAccount();
-//            tvUserName.setText(acct.getEmail().toString());
-            tvUserName.setText(acct.getDisplayName().toString());
-//            Picasso.with(this).load(acct.getPhotoUrl()).into(imgAvatar);
-//            Picasso.w
-
-        } else {
-
-        }
+    // logout
+    private void signOut() {
+        Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
+                new ResultCallback<Status>() {
+                    @Override
+                    public void onResult(Status status) {
+                        // ...
+                    }
+                });
     }
 }
 
