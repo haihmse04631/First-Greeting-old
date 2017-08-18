@@ -26,9 +26,9 @@ public class Profile extends Fragment {
     ImageView imgCover, imgAvatar;
     Bundle bund;
 
-    public Profile(Bundle bund) {
-        this.bund = bund;
-    }
+//    public Profile(Bundle bund) {
+//        this.bund = bund;
+//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
