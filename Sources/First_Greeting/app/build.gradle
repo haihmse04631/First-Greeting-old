@@ -37,4 +37,7 @@ dependencies {
     compile 'com.facebook.android:facebook-android-sdk:4.0.0'
     compile 'com.github.bumptech.glide:glide:4.0.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.android.gms:play-services-auth:9.4.0'
+//Dùng để hiển thị hình ảnh user, bạn có thể bỏ qua nếu không dùng
+    compile 'com.github.bumptech.glide:glide:3.7.0'
 }
