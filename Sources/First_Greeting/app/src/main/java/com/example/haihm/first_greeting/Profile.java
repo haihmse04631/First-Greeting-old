@@ -41,10 +41,10 @@ public class Profile extends Fragment {
     private GoogleApiClient mGoogleApiClient;
     int RC_SIGN_IN = 001;
     Bundle bund;
-
-    public Profile(Bundle bund) {
-        this.bund = bund;
-    }
+//
+//    public Profile(Bundle bund) {
+//        this.bund = bund;
+//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
