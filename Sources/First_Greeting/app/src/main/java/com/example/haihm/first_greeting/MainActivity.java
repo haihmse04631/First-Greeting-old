@@ -1,6 +1,7 @@
 package com.example.haihm.first_greeting;
 
 import android.content.Intent;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -44,7 +45,7 @@ import org.w3c.dom.Text;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
     ImageButton btnLoginGmail;
 
@@ -52,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
     CallbackManager callbackManager;
     AccessToken accessToken;
     String fbId, fbEmail, fbName, fbImage;
+    private GoogleApiClient mGoogleApiClient;
+    int RC_SIGN_IN = 001;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,11 +69,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 signIn();
-                Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
-                startActivity(intent);
+                //Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
+                //startActivity(intent);
             }
         });
+
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+
+        // Kết nối với google api clinet
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
+                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
+                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
+                .build();
+
     }
+
 
     void AnhXa() {
         btnLoginGmail = (ImageButton) findViewById(R.id.btnLoginWithGmail);
@@ -81,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         btnLoginFacebook = (LoginButton) findViewById(R.id.btnLoginFacebook);
         callbackManager = CallbackManager.Factory.create();
         if (com.facebook.AccessToken.getCurrentAccessToken() != null) {
-            Intent intent = new Intent(MainActivity.this, LoginWithFacebook.class);
+            Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
             startActivity(intent);
         } else {
             processLogin();
@@ -96,8 +111,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onSuccess(LoginResult loginResult) {
                         //Login successed. Move to LoginWithFacebook.class
                         checkFacebookLogin();
-                        Intent intent = new Intent(MainActivity.this, LoginWithFacebook.class);
-                        startActivity(intent);
+//                        Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
+//                        startActivity(intent);
                     }
 
                     @Override
@@ -120,7 +135,6 @@ public class MainActivity extends AppCompatActivity {
         Log.d("Success", mGoogleApiClient.isConnected()+"");
     }
 
-
     // include basic information
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -130,6 +144,8 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == RC_SIGN_IN) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             handleSignInResult(result);
+            Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
+            startActivity(intent);
         }
     }
 
@@ -148,6 +164,11 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
         }
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
     }
 
 //=======

@@ -41,10 +41,10 @@ public class Profile extends Fragment {
     private GoogleApiClient mGoogleApiClient;
     int RC_SIGN_IN = 001;
     Bundle bund;
-//
-//    public Profile(Bundle bund) {
-//        this.bund = bund;
-//    }
+
+    public Profile(Bundle bund) {
+        this.bund = bund;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -70,8 +70,10 @@ public class Profile extends Fragment {
         btnLogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                signOut();
+                //signOut();
                 LoginManager.getInstance().logOut();
+                getActivity().finish();
+
                 // Edit here to move back the login screen
             }
         });
@@ -82,13 +84,13 @@ public class Profile extends Fragment {
 
     // logout
     private void signOut() {
-        Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
-                new ResultCallback<Status>() {
-                    @Override
-                    public void onResult(Status status) {
-                        // ...
-                    }
-                });
+//       // Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
+//                new ResultCallback<Status>() {
+//                    @Override
+//                    public void onResult(Status status) {
+//                        // ...
+//                    }
+//                });
     }
 
 }
