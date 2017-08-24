@@ -171,12 +171,4 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
     }
 
-//=======
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//        super.onActivityResult(requestCode, resultCode, data);
-//        callbackManager.onActivityResult(requestCode, resultCode, data);
-//    }
-//
-//>>>>>>> 6cebd0f48573dd45991704f76ca8723606196419
 }
