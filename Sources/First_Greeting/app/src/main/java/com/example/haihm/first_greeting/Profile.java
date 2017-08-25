@@ -56,10 +56,6 @@ public class Profile extends Fragment {
         imgAvatar = (ImageView) rootView.findViewById(R.id.imgAvatar);
         imgCover = (ImageView) rootView.findViewById(R.id.imgCover);
 
-//        String name = getIntent().getStringExtra("Name");
-//        tvUserName.setText(name);
-//        String url = getIntent().getStringExtra("URLIMAGE");
-//        Picasso.with(this).load(url).into(imgAvatar);
         tvUserName.setText(bund.getString("fbName"));
         String fbImage = bund.getString("fbImage");
         Picasso.with(getApplicationContext()).load(fbImage).into(imgAvatar);
@@ -71,26 +67,16 @@ public class Profile extends Fragment {
             public void onClick(View v) {
                 //signOut();
                 LoginManager.getInstance().logOut();
-
+                //Auth.GoogleSignInApi.signOut(mGoogleApiClient);
+                Auth.GoogleSignInApi.signOut(mGoogleApiClient);
                 // Edit here to move back the login screen
-                getActivity().finish();
+                //getActivity().finish();
             }
         });
 
         return rootView;
     }
 
-
-    // logout
-    private void signOut() {
-//       // Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
-//                new ResultCallback<Status>() {
-//                    @Override
-//                    public void onResult(Status status) {
-//                        // ...
-//                    }
-//                });
-    }
 
 }
 

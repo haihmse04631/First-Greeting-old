@@ -45,14 +45,13 @@ import org.w3c.dom.Text;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-public class MainActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener,GoogleApiClient.OnConnectionFailedListener {
 
-    ImageButton btnLoginGmail;
 
     LoginButton btnLoginFacebook;
     CallbackManager callbackManager;
     AccessToken accessToken;
-    String fbId, fbEmail, fbName, fbImage;
+    String id, email, name, avatar;
     private GoogleApiClient mGoogleApiClient;
     int RC_SIGN_IN = 001;
 
@@ -61,19 +60,15 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         super.onCreate(savedInstanceState);
         FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_main);
-
-        AnhXa();
         checkFacebookLogin();
+        accessGoogleAPI();
+        checkGmailLogin();
 
-        btnLoginGmail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signIn();
-                //Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
-                //startActivity(intent);
-            }
-        });
 
+
+    }
+
+    void accessGoogleAPI(){
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
@@ -83,23 +78,60 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
-
     }
 
 
-    void AnhXa() {
-        btnLoginGmail = (ImageButton) findViewById(R.id.btnLoginWithGmail);
+    void checkGmailLogin() {
+        SignInButton signInButton = (SignInButton) findViewById(R.id.btnLoginWithGmail);
+        signInButton.setSize(SignInButton.SIZE_STANDARD);
+
+
+        findViewById(R.id.btnLoginWithGmail).setOnClickListener(this);
     }
+
+    private void signIn() {
+        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
+        startActivityForResult(signInIntent, RC_SIGN_IN);
+        Log.d("Sucess", mGoogleApiClient.isConnected() + "");
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
+        if (requestCode == RC_SIGN_IN) {
+            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+            handleSignInResult(result);
+        }
+    }
+
+    private void handleSignInResult(GoogleSignInResult result) {
+        if (result.isSuccess()) {
+            // Signed in successfully, show authenticated UI.
+            GoogleSignInAccount acct = result.getSignInAccount();
+            Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("fbName",acct.getDisplayName().toString());
+            bundle.putString("fbImage",acct.getPhotoUrl().toString());
+           // bundle.putString("fbCover", "#F00");
+            intent.putExtra("MyPackage", bundle);
+            startActivity(intent);
+        } else {
+
+        }
+    }
+
 
     //Check login already or not
     void checkFacebookLogin() {
         btnLoginFacebook = (LoginButton) findViewById(R.id.btnLoginFacebook);
         callbackManager = CallbackManager.Factory.create();
         if (com.facebook.AccessToken.getCurrentAccessToken() != null) {
-            Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
+            Intent intent = new Intent(MainActivity.this, LoginWithFacebook.class);
             startActivity(intent);
         } else {
-            processLogin();
+           processLogin();
         }
     }
 
@@ -127,48 +159,18 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 });
     }
 
-//<<<<<<< HEAD
-    // function sign-in khi đăng nhập thành công
-    private void signIn() {
-        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-        startActivityForResult(signInIntent, RC_SIGN_IN);
-        Log.d("Success", mGoogleApiClient.isConnected()+"");
-    }
-
-    // include basic information
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        callbackManager.onActivityResult(requestCode, resultCode, data);
-        // Result returned from launching the Intent from GoogleSignInApi.getSignInIntent(...);
-        if (requestCode == RC_SIGN_IN) {
-            GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
-            handleSignInResult(result);
-            Intent intent = new Intent(MainActivity.this, FirstGreetingMain.class);
-            startActivity(intent);
-        }
-    }
-
-    // lấy thông tin in ra màn hình
-    private void handleSignInResult(GoogleSignInResult result) {
-
-        if (result.isSuccess()) {
-            // Signed in successfully, show authenticated UI.
-            GoogleSignInAccount acct = result.getSignInAccount();
-//            tvUserName.setText(acct.getEmail().toString());
-           // tvUserName.setText(acct.getDisplayName().toString());
-            //Picasso.with(this).load(acct.getPhotoUrl()).into(imgAvatar);
-            Intent data = new Intent(MainActivity.this, Profile.class);
-            data.putExtra("Name",acct.getDisplayName().toString());
-            data.putExtra("URLIMAGE",acct.getPhotoUrl());
-        } else {
-
-        }
-    }
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btnLoginWithGmail:
+                signIn();
+                break;
+        }
+    }
 }

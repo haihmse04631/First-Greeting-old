@@ -34,14 +34,22 @@
         android:layout_weight="3"
         android:orientation="vertical">
 
-        <ImageButton
+        <!--<ImageButton-->
+            <!--android:id="@+id/btnLoginWithGmail"-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@null"-->
+            <!--app:srcCompat="@drawable/btn_gmail" />-->
+
+        <com.google.android.gms.common.SignInButton
             android:id="@+id/btnLoginWithGmail"
-            android:layout_width="350dp"
+            android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:background="@null"
-            app:srcCompat="@drawable/btn_gmail" />
+            />
 
         <com.facebook.login.widget.LoginButton
             android:id="@+id/btnLoginFacebook"
