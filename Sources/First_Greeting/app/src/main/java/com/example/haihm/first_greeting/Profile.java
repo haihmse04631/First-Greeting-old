@@ -56,7 +56,6 @@ public class Profile extends Fragment {
         imgAvatar = (ImageView) rootView.findViewById(R.id.imgAvatar);
         imgCover = (ImageView) rootView.findViewById(R.id.imgCover);
 
-
 //        String name = getIntent().getStringExtra("Name");
 //        tvUserName.setText(name);
 //        String url = getIntent().getStringExtra("URLIMAGE");
@@ -72,9 +71,9 @@ public class Profile extends Fragment {
             public void onClick(View v) {
                 //signOut();
                 LoginManager.getInstance().logOut();
-                getActivity().finish();
 
                 // Edit here to move back the login screen
+                getActivity().finish();
             }
         });
 
