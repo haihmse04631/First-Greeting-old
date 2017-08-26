@@ -42,7 +42,7 @@ public class Profile extends Fragment {
     int RC_SIGN_IN = 001;
     Bundle bund;
 
-    public Profile(Bundle bund) {
+    Profile(Bundle bund) {
         this.bund = bund;
     }
 
