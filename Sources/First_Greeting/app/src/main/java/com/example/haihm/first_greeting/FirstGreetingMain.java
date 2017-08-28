@@ -1,27 +1,19 @@
 package com.example.haihm.first_greeting;
 
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.design.widget.TabLayout;
+import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-
 import android.widget.ImageButton;
-import android.widget.Switch;
-import android.widget.TextView;
 
 public class FirstGreetingMain extends AppCompatActivity {
 
@@ -137,7 +129,8 @@ public class FirstGreetingMain extends AppCompatActivity {
                     Chat chatTab = new Chat();
                     return chatTab;
                 case 3:
-                    Profile profileTab = new Profile(bund);
+                    Profile profileTab = new Profile();
+                    profileTab.setArguments(bund);
                     return profileTab;
                 default:
                     return null;
