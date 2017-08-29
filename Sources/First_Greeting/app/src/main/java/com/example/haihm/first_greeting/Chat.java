@@ -24,7 +24,6 @@ public class Chat extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         View rootView = inflater.inflate(R.layout.chat_tab, container, false);
         lvListChat = (ListView) rootView.findViewById(R.id.listViewListChat);
 
